@@ -16,6 +16,18 @@
   text-decoration: none;
 }
 
+.testCase{
+	border: 1px solid black;
+    padding: 10px 30px;
+}
+
+.testCases{
+	width: 700px;
+	    display: block;
+	    margin-left: auto;
+    margin-right: auto;
+}
+
 .clickButton:hover {
   background: #3cb0fd;
   background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
@@ -28,8 +40,19 @@
 		
 h1 {
 	text-align:center;
-	background-color: yellow;
+
+}
+#content {
+  margin-left:auto;
+  margin-right:auto;
+  width:960px;
+  height:2000px;
+  background-color: white;
 }
 
-.clicked{background-color:white;}
+body{
+	background-color: black;
+}
+
+.clicked{background-color:yellow;}
 			
