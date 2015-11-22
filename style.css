@@ -1,4 +1,50 @@
 
+a{ text-decoration:none; cursor: pointer;}
+a.startButton:not(.blinkBorder):hover { border: 2px solid black;}
+
+.hide{display:none;}
+
+h1 {
+	text-align:center;
+	font-family: myFirstFont;
+	font-size: 6em;
+	margin-bottom: 0px;
+	margin-top:300px;
+	transition: margin-top 2s;
+	-webkit-transition: margin-top 2s;
+}
+
+h1.started{ margin-top: 50px;}
+
+#content {
+  margin-left:auto;
+  margin-right:auto;
+  width:1280px;
+  height:1000px;
+  background-color: white;
+  font-family: myFirstFont;
+  box-shadow: 10px 10px 5px #888888;
+  border: 1px solid black;
+}
+
+body{
+	background-image:url(background1.jpg);
+}
+
+p.summary{ text-align:center; width: 900px; margin-left: auto; margin-right: auto;}
+
+a.startButton {  padding: 10px 30px; font-size:2em; color:#000000; display:-webkit-box;}
+a.startButton:not(.blinkBorder) { border: 1px solid black; }
+a.startButton .startS.changeColor{color: #0000FF;}
+a.startButton .startT.changeColor{color: #FF0000;}
+a.startButton .startA.changeColor{color: #00FF00;}
+a.startButton .startR.changeColor{color: #FF00FF;}
+a.startButton .startTT.changeColor{color: #FFCC00;}
+
+div.start{ margin:50px auto; width: 150px; }
+.blinkBorder{ border: 2px solid white; }
+
+
 .clickButton {
   background: #3498db;
   background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
@@ -18,41 +64,69 @@
 
 .testCase{
 	border: 1px solid black;
-    padding: 10px 30px;
+    padding: 10px 42px;
+	color:black;
 }
+
+.testCase.case1:hover{ border:1px solid #0000FF; color: #0000FF;}
+.testCase.case2:hover{ border:1px solid #FF0000; color: #FF0000; }
+.testCase.case3:hover{ border:1px solid #00FF00; color: #00FF00; }
+.testCase.case4:hover{ border:1px solid #FF00FF; color: #FF00FF; }
+.testCase.case5:hover{ border:1px solid #FFCC00; color: #FFCC00; }
+
+
 
 .testCases{
-	width: 700px;
-	    display: block;
-	    margin-left: auto;
-    margin-right: auto;
+	width: 900px; margin-left: auto; margin-right: auto;
 }
+.folders { width: 900px; margin-left: auto; margin-right: auto; margin-top: 30px;}
+.folders a img { width: 60px; height: auto;}
+.folders a:focus {outline:none;}
 
-.clickButton:hover {
-  background: #3cb0fd;
-  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
-  text-decoration: none;
-}
-		
-h1 {
-	text-align:center;
+.folders > div {width:175px; display: inline-block; position:relative;}
+.folders > div img { padding-left: 55px;}
 
-}
-#content {
-  margin-left:auto;
-  margin-right:auto;
-  width:960px;
-  height:2000px;
-  background-color: white;
-}
+.folders a {display:none;}
+.folders a.selected,.folders > div > div.selected {display: block;} { display:block; }
+.folders > div > div {display: none;}
 
-body{
-	background-color: black;
-}
+.folders > div a:hover + div { display: block !important;}
+.blueCircle { position:absolute; width: 10px; height: 10px; border-radius: 100%; -moz-border-radius: 100%; border-radius: 100%;  border: 4px solid #0000FF; top: 17px; left: 77px;}
+.redCircle { position:absolute; width: 10px; height: 10px; border-radius: 100%; -moz-border-radius: 100%; border-radius: 100%;  border: 4px solid #FF0000; top: 17px; left: 77px;}
+.greenCircle { position:absolute; width: 10px; height: 10px; border-radius: 100%; -moz-border-radius: 100%; border-radius: 100%;  border: 4px solid #00FF00; top: 17px; left: 77px;}
+.purpleCircle { position:absolute; width: 10px; height: 10px; border-radius: 100%; -moz-border-radius: 100%; border-radius: 100%;  border: 4px solid #FF00FF; top: 17px; left: 77px;}
+.orangeCircle { position:absolute; width: 10px; height: 10px; border-radius: 100%; -moz-border-radius: 100%; border-radius: 100%;  border: 4px solid #FFCC00; top: 17px; left: 77px;}
 
-.clicked{background-color:yellow;}
+.doc1line1{ height: 47px; border-right: 2px solid #0000FF; position: absolute; top: 35px; left: 85px;}
+.doc1line2 { width:724px; border-bottom: 2px solid #0000FF; position: absolute; top:80px; left: 85px;}
+.doc1line3 { height: 47px; border-right: 2px solid #0000FF; position: absolute; top:82px; left: 85px;}
+.doc1line4 { height: 47px; border-right: 2px solid #0000FF; position: absolute; top:82px; left: 807px;}
+
+.doc2line1{ height: 47px; border-right: 2px solid #FF0000; position: absolute; top: 35px; left: 85px;}
+.doc2line2 { width:724px; border-bottom: 2px solid #FF0000; position: absolute; top:80px; left: -95px;}
+.doc2line3 { height: 47px; border-right: 2px solid #FF0000; position: absolute; top:82px; left: -95px;}
+.doc2line4 { height: 47px; border-right: 2px solid #FF0000; position: absolute; top:82px; left: 627px;}
+
+.doc3line1{ height: 47px; border-right: 2px solid #00FF00; position: absolute; top: 35px; left: 85px;}
+.doc3line2 { width:724px; border-bottom: 2px solid #00FF00; position: absolute; top:80px; left: -276px;}
+.doc3line3 { height: 47px; border-right: 2px solid #00FF00; position: absolute; top:82px; left: -276px;}
+.doc3line4 { height: 47px; border-right: 2px solid #00FF00; position: absolute; top:82px; left: 446px;}
+
+.doc4line1{ height: 47px; border-right: 2px solid #FF00FF; position: absolute; top: 35px; left: 85px;}
+.doc4line2 { width:724px; border-bottom: 2px solid #FF00FF; position: absolute; top:80px; left: -456px;}
+.doc4line3 { height: 47px; border-right: 2px solid #FF00FF; position: absolute; top:82px; left: -456px;}
+.doc4line4 { height: 47px; border-right: 2px solid #FF00FF; position: absolute; top:82px; left: 266px;}
+
+.doc5line1 { height: 47px; border-right: 2px solid #FFCC00; position: absolute; top: 35px; left: 85px;}
+.doc5line2 { width:724px; border-bottom: 2px solid #FFCC00; position: absolute; top:80px; left: -637px;}
+.doc5line3 { height: 47px; border-right: 2px solid #FFCC00; position: absolute; top:82px; left: -637px;}
+.doc5line4 { height: 47px; border-right: 2px solid #FFCC00; position: absolute; top:82px; left: 85px;}
+@font-face {
+    font-family: myFirstFont;
+    src: url(CODE_Bold.otf);
+}
+			
+			
+			
+			
 			
