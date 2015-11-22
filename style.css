@@ -1,8 +1,12 @@
 
 a{ text-decoration:none; cursor: pointer;}
+.blueCircle, .redCircle, .greenCircle, .purpleCircle, .orangeCircle { cursor:pointer; }
 a.startButton:not(.blinkBorder):hover { border: 2px solid black;}
 
+.underline {text-decoration:underline;}
 .hide{display:none;}
+.show{display:block;}
+strong { font-weight:bold;}
 
 h1 {
 	text-align:center;
@@ -84,10 +88,10 @@ div.start{ margin:50px auto; width: 150px; }
 .folders a:focus {outline:none;}
 
 .folders > div {width:175px; display: inline-block; position:relative;}
-.folders > div img { padding-left: 55px;}
+.folders > div a img { padding-left: 55px;}
 
-.folders a {display:none;}
-.folders a.selected,.folders > div > div.selected {display: block;} { display:block; }
+.folders > div > a {display:none;}
+.folders a.selected,.folders > div > div.selected {display: block;}
 .folders > div > div {display: none;}
 
 .folders > div a:hover + div { display: block !important;}
@@ -101,11 +105,26 @@ div.start{ margin:50px auto; width: 150px; }
 .doc1line2 { width:724px; border-bottom: 2px solid #0000FF; position: absolute; top:80px; left: 85px;}
 .doc1line3 { height: 47px; border-right: 2px solid #0000FF; position: absolute; top:82px; left: 85px;}
 .doc1line4 { height: 47px; border-right: 2px solid #0000FF; position: absolute; top:82px; left: 807px;}
+.doc1Image { width: 230px; height: 300px; position: absolute; top: 129px; padding: 2px; border: 2px solid #0000FF; }
+.doc1Image img { padding-left:2px;} 
+.doc1Desc { width: 400px; height: 300px; position: absolute; top: 129px; left: 493px; padding: 2px; border: 2px solid #0000FF;}
+.blueCircle.c1 {  border: 2px solid #0000FF; top: 61px; left: 169px;}
+.blueCircle.c2 {   border: 2px solid #0000FF; top: 140px; left: 41px;}
+.blueCircle.c3 {  border: 2px solid #0000FF; top: 116px; left: 152px;}
+.blueCircle.clicked { border: 3px solid white;}
+
 
 .doc2line1{ height: 47px; border-right: 2px solid #FF0000; position: absolute; top: 35px; left: 85px;}
 .doc2line2 { width:724px; border-bottom: 2px solid #FF0000; position: absolute; top:80px; left: -95px;}
 .doc2line3 { height: 47px; border-right: 2px solid #FF0000; position: absolute; top:82px; left: -95px;}
 .doc2line4 { height: 47px; border-right: 2px solid #FF0000; position: absolute; top:82px; left: 627px;}
+.doc2Image { width: 230px; height: 300px; position: absolute; top: 129px; padding: 2px; border: 2px solid #FF0000; right: 117px;}
+.doc2Image img { width:230px; height:300px;} 
+.doc2Desc { width: 400px; height: 300px; position: absolute; top: 129px; left: 311px; padding: 2px; border: 2px solid #FF0000;}
+.redCircle.c1 {  border: 2px solid #FF0000; top: 94px; left: 117px;}
+.redCircle.c2 {   border: 2px solid #FF0000; top: 140px; left: 41px;}
+.redCircle.c3 {  border: 2px solid #FF0000; top: 164px; left: 91px;}
+.redCircle.clicked { border: 3px solid white;}
 
 .doc3line1{ height: 47px; border-right: 2px solid #00FF00; position: absolute; top: 35px; left: 85px;}
 .doc3line2 { width:724px; border-bottom: 2px solid #00FF00; position: absolute; top:80px; left: -276px;}
@@ -121,6 +140,7 @@ div.start{ margin:50px auto; width: 150px; }
 .doc5line2 { width:724px; border-bottom: 2px solid #FFCC00; position: absolute; top:80px; left: -637px;}
 .doc5line3 { height: 47px; border-right: 2px solid #FFCC00; position: absolute; top:82px; left: -637px;}
 .doc5line4 { height: 47px; border-right: 2px solid #FFCC00; position: absolute; top:82px; left: 85px;}
+
 @font-face {
     font-family: myFirstFont;
     src: url(CODE_Bold.otf);

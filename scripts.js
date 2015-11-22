@@ -68,5 +68,52 @@ $(document).ready(function () {
 		$(".doc5").addClass("selected");
 	});
 	
+	$(".blueCircle.c1").click(function(){
+		$(this).addClass("clicked");
+		$(".doc1Front .desc1").removeClass("hide");
+		blueCircleDone();
+	});
+	$(".blueCircle.c2").click(function(){
+		$(this).addClass("clicked");
+		$(".doc1Front .desc2").removeClass("hide");
+		blueCircleDone();
+	});
+	$(".blueCircle.c3").click(function(){
+		$(this).addClass("clicked");
+		$(".doc1Front .desc3").removeClass("hide");
+		blueCircleDone();
+	});
+	$(".doc1Desc a").click(function(){
+		$(".doc1Front").toggleClass("hide");
+		$(".doc1Back").toggleClass("hide");
+	});
 	
+	function blueCircleDone(){
+		if (!($(".doc1Front .desc1").hasClass("hide") || $(".doc1Front .desc2").hasClass("hide") || $(".doc1Front .desc3").hasClass("hide"))){
+			$(".doc1Front .diagnosis").removeClass("hide");
+			$(".doc1Desc a").removeClass("hide");
+		}
+	}
+	
+	$(".redCircle.c1").click(function(){
+		$(this).addClass("clicked");
+		$(".doc2Front .desc1").removeClass("hide");
+		redCircleDone();
+	});
+	$(".redCircle.c2").click(function(){
+		$(this).addClass("clicked");
+		$(".doc2Front .desc2").removeClass("hide");
+		redCircleDone();
+	});
+	$(".redCircle.c3").click(function(){
+		$(this).addClass("clicked");
+		$(".doc2Front .desc3").removeClass("hide");
+		redCircleDone();
+	});
+	
+	function redCircleDone(){
+		if (!($(".doc2Front .desc1").hasClass("hide") || $(".doc2Front .desc2").hasClass("hide") || $(".doc2Front .desc3").hasClass("hide"))){
+			$(".doc2Front .diagnosis").removeClass("hide");
+		}
+	}
 });
