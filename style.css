@@ -130,16 +130,32 @@ div.start{ margin:50px auto; width: 150px; }
 .doc3line2 { width:724px; border-bottom: 2px solid #00FF00; position: absolute; top:80px; left: -276px;}
 .doc3line3 { height: 47px; border-right: 2px solid #00FF00; position: absolute; top:82px; left: -276px;}
 .doc3line4 { height: 47px; border-right: 2px solid #00FF00; position: absolute; top:82px; left: 446px;}
+.doc3Image { width: 230px; height: 300px; position: absolute; top: 129px; padding: 2px; border: 2px solid #00FF00; right: 298px;}
+.doc3Image img { width:230px; height:300px;} 
+.doc3Desc { width: 400px; height: 300px; position: absolute; top: 129px; left: 133px; padding: 2px; border: 2px solid #00FF00;}
 
 .doc4line1{ height: 47px; border-right: 2px solid #FF00FF; position: absolute; top: 35px; left: 85px;}
 .doc4line2 { width:724px; border-bottom: 2px solid #FF00FF; position: absolute; top:80px; left: -456px;}
 .doc4line3 { height: 47px; border-right: 2px solid #FF00FF; position: absolute; top:82px; left: -456px;}
 .doc4line4 { height: 47px; border-right: 2px solid #FF00FF; position: absolute; top:82px; left: 266px;}
+.doc4Image { width: 230px; height: 300px; position: absolute; top: 129px; padding: 2px; border: 2px solid #FF00FF; right: 477px;}
+.doc4Image img { width:230px; height:300px;} 
+.doc4Desc { width: 400px; height: 300px; position: absolute; top: 129px; left: -47px; padding: 2px; border: 2px solid #FF00FF;}
+.purpleCircle.c1 {  border: 2px solid #FF00FF; top: 65px; left: 180px;}
+.purpleCircle.c2 {   border: 2px solid #FF00FF; top: 88px; left: 170px;}
+.purpleCircle.c3 {  border: 2px solid #FF00FF; top: 199px; left: 16px;}
+.purpleCircle.clicked { border: 3px solid white;}
 
 .doc5line1 { height: 47px; border-right: 2px solid #FFCC00; position: absolute; top: 35px; left: 85px;}
 .doc5line2 { width:724px; border-bottom: 2px solid #FFCC00; position: absolute; top:80px; left: -637px;}
 .doc5line3 { height: 47px; border-right: 2px solid #FFCC00; position: absolute; top:82px; left: -637px;}
 .doc5line4 { height: 47px; border-right: 2px solid #FFCC00; position: absolute; top:82px; left: 85px;}
+.doc5Image { width: 230px; height: 300px; position: absolute; top: 129px; padding: 2px; border: 2px solid #FFCC00; right: 659px;}
+.doc5Image img { width:230px; height:300px;} 
+.doc5Desc { width: 400px; height: 300px; position: absolute; top: 129px; left: -229px; padding: 2px; border: 2px solid #FFCC00;}
+.orangeCircle.c1 {  border: 2px solid #FFCC00; top: 65px; left: 130px;}
+.orangeCircle.c2 {   border: 2px solid #FFCC00; top: 175px; left: 190px;}
+.orangeCircle.c3 {  border: 2px solid #FFCC00; top: 199px; left: 100px;}
 
 @font-face {
     font-family: myFirstFont;

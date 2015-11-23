@@ -110,10 +110,40 @@ $(document).ready(function () {
 		$(".doc2Front .desc3").removeClass("hide");
 		redCircleDone();
 	});
-	
 	function redCircleDone(){
 		if (!($(".doc2Front .desc1").hasClass("hide") || $(".doc2Front .desc2").hasClass("hide") || $(".doc2Front .desc3").hasClass("hide"))){
 			$(".doc2Front .diagnosis").removeClass("hide");
 		}
 	}
+	
+	
+	$(".purpleCircle.c1").click(function(){
+		$(this).addClass("clicked");
+		$(".doc4Front .desc1").removeClass("hide");
+		purpleCircleDone();
+	});
+	$(".purpleCircle.c2").click(function(){
+		$(this).addClass("clicked");
+		$(".doc4Front .desc2").removeClass("hide");
+		purpleCircleDone();
+	});
+	$(".purpleCircle.c3").click(function(){
+		$(this).addClass("clicked");
+		$(".doc4Front .desc3").removeClass("hide");
+		purpleCircleDone();
+	});
+	
+	function purpleCircleDone(){
+		if (!($(".doc4Front .desc1").hasClass("hide") || $(".doc4Front .desc2").hasClass("hide") || $(".doc4Front .desc3").hasClass("hide"))){
+			$(".doc4Front .diagnosis").removeClass("hide");
+		}
+	}
+	
+	$(".doc5Desc a").click(function(){
+		$(".doc5Front").toggleClass("hide");
+		$(".doc5Back").toggleClass("hide");
+		$(".orangeCircle.c1").removeClass("hide");
+		$(".orangeCircle.c2").removeClass("hide");
+		$(".orangeCircle.c3").removeClass("hide");
+	});
 });
